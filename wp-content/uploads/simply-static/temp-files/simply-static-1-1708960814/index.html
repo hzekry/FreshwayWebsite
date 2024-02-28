@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Freshway &#8211; Just another WordPress site</title>
+</head>
+
+<br>
+<b>Fatal error</b>:  Uncaught Error: Unknown named parameter $id in C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\manager.php:100
+Stack trace:
+#0 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\manager.php(100): call_user_func_array(Array, Array)
+#1 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\manager.php(61): Elementor\Core\DynamicTags\Manager-&gt;parse_tag_text('[elementor-tag ...', Array, Array)
+#2 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\includes\controls\base-data.php(100): Elementor\Core\DynamicTags\Manager-&gt;parse_tags_text('[elementor-tag ...', Array, Array)
+#3 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\includes\base\controls-stack.php(1167): Elementor\Base_Data_Control-&gt;parse_tags('[elementor-tag ...', Array)
+#4 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\includes\base\controls-stack.php(1032): Elementor\Controls_Stack-&gt;parse_dynamic_settings(Array)
+#5 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(289): Elementor\Controls_Stack-&gt;get_parsed_dynamic_settings()
+#6 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\dynamic-css.php(111): Elementor\Core\Files\CSS\Post-&gt;render_styles(Object(ElementorPro\Modules\ThemeBuilder\Widgets\Site_Logo))
+#7 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(289): Elementor\Core\DynamicTags\Dynamic_CSS-&gt;add_controls_stack_style_rules(Object(Elementor\Element_Column), Array, Array, Array, Array)
+#8 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\dynamic-css.php(111): Elementor\Core\Files\CSS\Post-&gt;render_styles(Object(Elementor\Element_Column))
+#9 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(289): Elementor\Core\DynamicTags\Dynamic_CSS-&gt;add_controls_stack_style_rules(Object(Elementor\Element_Section), Array, Array, Array, Array)
+#10 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\dynamic-css.php(111): Elementor\Core\Files\CSS\Post-&gt;render_styles(Object(Elementor\Element_Section))
+#11 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(289): Elementor\Core\DynamicTags\Dynamic_CSS-&gt;add_controls_stack_style_rules(Object(Elementor\Element_Column), Array, Array, Array, Array)
+#12 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\dynamic-css.php(111): Elementor\Core\Files\CSS\Post-&gt;render_styles(Object(Elementor\Element_Column))
+#13 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(289): Elementor\Core\DynamicTags\Dynamic_CSS-&gt;add_controls_stack_style_rules(Object(Elementor\Element_Section), Array, Array, Array, Array)
+#14 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(171): Elementor\Core\Files\CSS\Post-&gt;render_styles(Object(Elementor\Element_Section))
+#15 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\base.php(574): Elementor\Core\Files\CSS\Post-&gt;render_css()
+#16 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\base.php(131): Elementor\Core\Files\CSS\Base-&gt;parse_content()
+#17 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\dynamic-css.php(68): Elementor\Core\Files\Base-&gt;get_content()
+#18 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\base.php(188): Elementor\Core\DynamicTags\Dynamic_CSS-&gt;get_meta()
+#19 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(192): Elementor\Core\Files\CSS\Base-&gt;enqueue()
+#20 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\manager.php(423): Elementor\Core\Files\CSS\Post-&gt;enqueue()
+#21 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Elementor\Core\DynamicTags\Manager-&gt;after_enqueue_post_css(Object(Elementor\Core\DynamicTags\Dynamic_CSS))
+#22 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook-&gt;apply_filters('', Array)
+#23 C:\xampp1\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook-&gt;do_action(Array)
+#24 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\base.php(248): do_action('elementor/css-f...', Object(Elementor\Core\Files\CSS\Post))
+#25 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\files\css\post.php(192): Elementor\Core\Files\CSS\Base-&gt;enqueue()
+#26 C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\theme-builder\classes\locations-manager.php(86): Elementor\Core\Files\CSS\Post-&gt;enqueue()
+#27 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(324): ElementorPro\Modules\ThemeBuilder\Classes\Locations_Manager-&gt;enqueue_styles('')
+#28 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook-&gt;apply_filters(NULL, Array)
+#29 C:\xampp1\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook-&gt;do_action(Array)
+#30 C:\xampp1\htdocs\wordpress\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#31 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#32 C:\xampp1\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook-&gt;apply_filters(NULL, Array)
+#33 C:\xampp1\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook-&gt;do_action(Array)
+#34 C:\xampp1\htdocs\wordpress\wp-includes\general-template.php(3052): do_action('wp_head')
+#35 C:\xampp1\htdocs\wordpress\wp-content\themes\oceanwp\header.php(15): wp_head()
+#36 C:\xampp1\htdocs\wordpress\wp-includes\template.php(790): require_once('C:\\xampp1\\htdoc...')
+#37 C:\xampp1\htdocs\wordpress\wp-includes\template.php(725): load_template('C:\\xampp1\\htdoc...', true, Array)
+#38 C:\xampp1\htdocs\wordpress\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#39 C:\xampp1\htdocs\wordpress\wp-content\themes\oceanwp\page.php(12): get_header()
+#40 C:\xampp1\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp1\\htdoc...')
+#41 C:\xampp1\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp1\\htdoc...')
+#42 C:\xampp1\htdocs\wordpress\index.php(17): require('C:\\xampp1\\htdoc...')
+#43 {main}
+  thrown in <b>C:\xampp1\htdocs\wordpress\wp-content\plugins\elementor\core\dynamic-tags\manager.php</b> on line <b>100</b><br>
+
+</html>

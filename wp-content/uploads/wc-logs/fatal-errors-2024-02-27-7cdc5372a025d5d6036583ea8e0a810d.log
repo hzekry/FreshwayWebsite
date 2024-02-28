@@ -1,0 +1,9 @@
+2024-02-27T21:18:42+00:00 CRITICAL Uncaught Error: Call to undefined function wp_admin_notice() in C:\xampp1\htdocs\wordpress\wp-admin\includes\dashboard.php:1370
+Stack trace:
+#0 C:\xampp1\htdocs\wordpress\wp-admin\includes\dashboard.php(1312): wp_print_community_events_markup()
+#1 C:\xampp1\htdocs\wordpress\wp-admin\includes\template.php(1395): wp_dashboard_events_news('', Array)
+#2 C:\xampp1\htdocs\wordpress\wp-admin\includes\dashboard.php(274): do_meta_boxes(Object(WP_Screen), 'side', '')
+#3 C:\xampp1\htdocs\wordpress\wp-admin\index.php(203): wp_dashboard()
+#4 {main}
+  thrown in C:\xampp1\htdocs\wordpress\wp-admin\includes\dashboard.php on line 1370
+
